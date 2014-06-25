@@ -5,7 +5,7 @@ The UserExport extension to MediaWiki allows to export all user's name and e-mai
 ## Installation
 1. Obtain the code from [GitHub](https://github.com/kghbln/UserExport)
 2. Extract the files in a directory called ``UserExport`` in your ``extensions/`` folder.
-3. Add the following code at the bottom of your "LocalSettings.php" file:<br />``require_once "$IP/extensions/ImportUsers/ImportUsers.php";``
+3. Add the following code at the bottom of your "LocalSettings.php" file:<br />``require_once "$IP/extensions/UserExport/UserExport.php";``
 4. Go to "Special:Version" on your wiki to verify that the extension is successfully installed.
 5. Done.
 
