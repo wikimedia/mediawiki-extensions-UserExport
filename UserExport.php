@@ -11,9 +11,9 @@
  * @author Rodrigo Sampaio Primo (RodrigoSampaioPrimo)
  */
  
-if (!defined('MEDIAWIKI')) {
-    echo ("This file is an extension to the MediaWiki software and cannot be used standalone.\n");
-    die(1);
+// Ensure that the script cannot be executed outside of MediaWiki.
+if ( !defined( 'MEDIAWIKI' ) ) {
+    die( 'This is an extension to the MediaWiki package and cannot be run standalone.' );
 }
  
 $wgExtensionCredits['specialpage'][] = array(
