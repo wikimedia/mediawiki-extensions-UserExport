@@ -8,5 +8,6 @@
 	"userexport": "Benutzerdaten exportieren",
 	"userexport-submit": "Exportieren",
 	"userexport-badtoken": "Der Bearbeitungstoken ist ungültig.",
-	"userexport-description": "Diese Seite ermöglicht den Export der Benutzerdaten (Benutzername und E-Mail-Adresse) der auf dem Wiki registrierten Benutzer in eine CSV-Datei."
+	"userexport-description": "Diese Seite ermöglicht den Export der Benutzerdaten (Benutzername und E-Mail-Adresse) der auf dem Wiki registrierten Benutzer in eine CSV-Datei.",
+	"action-userexport": "Benutzerdaten zu exportieren"
 }
