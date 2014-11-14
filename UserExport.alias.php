@@ -2,15 +2,14 @@
 /**
  * Internationalisation file for the special page aliases of the UserExport extension.
  *
- * @author RodrigoSampaioPrimo
- *
- * @licence GNU General Public Licence 2.0 or later
+ * @file
+ * @ingroup Extensions
  */
+// @codingStandardsIgnoreFile
  
-$aliases = array();
- 
+$specialPageAliases = array(); 
 /** English
- * @author RodrigoSampaioPrimo
+ * @author Rodrigoprimo
  */
 $aliases['en'] = array(
 	'userexport' => array( 'userexport' ),
