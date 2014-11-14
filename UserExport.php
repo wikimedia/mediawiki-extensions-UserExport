@@ -25,14 +25,17 @@ $wgExtensionCredits['specialpage'][] = array(
     'descriptionmsg' => 'userexport-desc',
 );
  
-$wgAvailableRights[] = 'userexport';
-$wgGroupPermissions['bureaucrat']['userexport'] = true;
- 
-$dir = dirname(__FILE__) . '/';
-$wgAutoloadClasses['UserExport'] = $dir . 'UserExport.body.php';
-$wgExtensionMessagesFiles['UserExport'] = $dir . 'UserExport.i18n.php';
-$wgExtensionAliasesFiles['UserExport'] = $dir . 'UserExport.i18n.alias.php';
- 
+// Register extension class.
+$wgAutoloadClasses['UserExport'] = __DIR__ . '/UserExport.body.php';
+
+// Register extension messages and other localisation.
+$wgMessagesDirs['UserExport'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['UserExport'] = __DIR__ . '/UserExport.i18n.php';
+$wgExtensionMessagesFiles['UserExportAlias'] = __DIR__ . '/UserExport.alias.php';
+
+// Register special page into MediaWiki. 
 $wgSpecialPages['UserExport'] = 'UserExport';
 $wgSpecialPageGroups['UserExport'] = 'users';
-$wgUserExportProtectedGroups = array( "sysop" );
+
+// Create new right.
+$wgAvailableRights[] = 'userexport';
