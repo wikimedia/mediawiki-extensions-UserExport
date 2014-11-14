@@ -29,7 +29,7 @@ class UserExport extends SpecialPage {
         if ( $wgRequest->getText( 'exportusers' ) ) {
             if ( !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) {
                 // bad edit token
-                $wgOut->addHtml( "<span style=\"color: red;\">" . wfMsg( 'userexport-badtoken' ) . "</span><br />\n" );
+                $wgOut->addHtml( "<span style=\"color: red;\">" . wfMessage( 'userexport-badtoken' )->escaped() . "</span><br />\n" );
             } else {
                 $this->exportUsers();
             }
@@ -37,10 +37,10 @@ class UserExport extends SpecialPage {
  
         $wgOut->addHTML(
             Xml::openElement('p') .
-            wfMsg( 'userexport-description' ) .
+            wfMessage( 'userexport-description' )->text() .
             Xml::closeElement('p') . 
             Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getTitle()->getLocalUrl(), 'id' => 'userexportform' ) ) .
-            Xml::submitButton( wfMsg( 'userexport-submit' ) ) .
+            Xml::submitButton( wfMessage( 'userexport-submit' )->text() ) .
 			Html::hidden( 'token', $wgUser->editToken() ) .
 	    	Html::hidden( 'exportusers', true ) .
 		    Xml::closeElement( 'form' ) . "\n"
