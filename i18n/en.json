@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rodrigoprimo",
+			"Kghbln"
+		]
+	},
+	"userexport-desc": "Allows to export user data to a CSV file",
+	"userexport": "Export user data",
+	"userexport-submit": "Export",
+	"userexport-badtoken": "Invalid edit token",
+	"userexport-description": "This page allows to export the user data (user name and user e-mail) of all users registered on this wiki to a CSV-file."
+}
