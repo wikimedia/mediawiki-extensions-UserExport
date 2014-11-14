@@ -14,8 +14,8 @@ $messages = array();
  */
 $messages['en'] = array(
     'userexport-desc'        => 'Allows to export user data to a CSV file',
-    'userexport'             => 'User Export',
-    'userexport-submit'      => 'Export users to CSV file',
+    'userexport'             => 'Export user data',
+    'userexport-submit'      => 'Export',
     'userexport-badtoken'    => 'Invalid edit token',
     'userexport-description' => 'This page allows to export the user data (user name and user e-mail) of all users registered on this wiki to a CSV-file.'
 );
@@ -25,8 +25,8 @@ $messages['en'] = array(
  */
 $messages['de'] = array(
     'userexport-desc'        => 'Ermöglicht den Export von Benutzerdaten als CSV-Datei',
-    'userexport'             => 'Benutzerdatenexport',
-    'userexport-submit'      => 'Benutzerdaten exportieren',
+    'userexport'             => 'Benutzerdaten exportieren',
+    'userexport-submit'      => 'Exportieren',
     'userexport-badtoken' 		 => 'Der Bearbeitungstoken ist ungültig.',
     'userexport-description' => 'Diese Seite ermöglicht den Export die Benutzerdaten (Benutzername und E-Mail-Adresse) der auf dem Wiki registrierten Benutzer in eine CSV-Datei.'
 );
