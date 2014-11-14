@@ -2,7 +2,7 @@
 
 ### 1.1.0
 
-Released: 2014-11-14
+Released: 2014-11-14  
 Authored: Kghbln
 
 * Remove support for ≤ PHP 5.2
