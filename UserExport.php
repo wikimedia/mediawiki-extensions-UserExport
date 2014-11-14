@@ -36,9 +36,3 @@ $wgExtensionAliasesFiles['UserExport'] = $dir . 'UserExport.i18n.alias.php';
 $wgSpecialPages['UserExport'] = 'UserExport';
 $wgSpecialPageGroups['UserExport'] = 'users';
 $wgUserExportProtectedGroups = array( "sysop" );
- 
-# Add a new log type
-$wgLogTypes[]                         = 'userexport';
-$wgLogNames['userexport']              = 'userexport-logpage';
-$wgLogHeaders['userexport']            = 'userexport-logpagetext';
-$wgLogActions['userexport/exportuser']  = 'userexport-success-log';
