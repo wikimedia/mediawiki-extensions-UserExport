@@ -10,8 +10,8 @@
  *
  * @links https://github.com/kghbln/UserExport/blob/master/README.md Documentation
  * @links https://www.mediawiki.org/wiki/Extension_talk:UserExport Support
- * @links https://github.com/kghbln/UserExport/issues Bug tracker
- * @links https://github.com/kghbln/UserExport Source code
+ * @links https://phabricator.wikimedia.org/ Bug tracker
+ * @links https://git.wikimedia.org/summary/mediawiki%2Fextensions%2FUserExport.git Source code
  *
  * @copyright Copyright (c) 2009
  * @author Rodrigo Sampaio Primo (RodrigoSampaioPrimo) <rodrigosprimo@gmail.com>
@@ -31,7 +31,8 @@ $wgExtensionCredits['specialpage'][] = array(
     'name' => 'User Export',
     'author' => array(
         'Rodrigo Sampaio Primo',
-        'Karsten Hoffmeyer'
+        'Karsten Hoffmeyer',
+	'...'
         ),
     'url' => 'https://www.mediawiki.org/wiki/Extension:UserExport',
     'descriptionmsg' => 'userexport-desc',
