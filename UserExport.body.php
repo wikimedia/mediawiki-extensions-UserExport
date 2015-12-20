@@ -41,7 +41,7 @@ class UserExport extends SpecialPage {
             Xml::closeElement('p') . 
             Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getTitle()->getLocalUrl(), 'id' => 'userexportform' ) ) .
             Xml::submitButton( wfMessage( 'userexport-submit' )->text() ) .
-			Html::hidden( 'token', $wgUser->editToken() ) .
+			Html::hidden( 'token', $wgUser->getEditToken() ) .
 	    	Html::hidden( 'exportusers', true ) .
 		    Xml::closeElement( 'form' ) . "\n"
 		);
