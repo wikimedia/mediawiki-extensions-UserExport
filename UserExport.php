@@ -6,7 +6,7 @@
  * @ingroup Extensions
  * @package MediaWiki
  *
- * @version 1.1.0 2014-11-14
+ * @version 1.1.1 2016-01-21
  *
  * @links https://github.com/kghbln/UserExport/blob/master/README.md Documentation
  * @links https://www.mediawiki.org/wiki/Extension_talk:UserExport Support
@@ -36,7 +36,7 @@ $wgExtensionCredits['specialpage'][] = array(
         ),
     'url' => 'https://www.mediawiki.org/wiki/Extension:UserExport',
     'descriptionmsg' => 'userexport-desc',
-    'version' => '1.1.0',
+    'version' => '1.1.1',
     'license-name' => 'GPL-2.0+'
     );
 
@@ -48,7 +48,7 @@ $wgMessagesDirs['UserExport'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['UserExport'] = __DIR__ . '/UserExport.i18n.php';
 $wgExtensionMessagesFiles['UserExportAlias'] = __DIR__ . '/UserExport.alias.php';
 
-// Register special page into MediaWiki. 
+// Register special page into MediaWiki.
 $wgSpecialPages['UserExport'] = 'UserExport';
 $wgSpecialPageGroups['UserExport'] = 'users';
 

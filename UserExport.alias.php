@@ -6,18 +6,18 @@
  * @ingroup Extensions
  */
 // @codingStandardsIgnoreFile
- 
-$specialPageAliases = array(); 
+
+$specialPageAliases = array();
 /** English
  * @author Rodrigoprimo
  */
-$aliases['en'] = array(
+$specialPageAliases['en'] = array(
 	'userexport' => array( 'userexport' ),
 );
- 
+
 /** German (Deutsch)
  * @author Kghbln
  */
-$aliases['de'] = array(
+$specialPageAliases['de'] = array(
 	'userexport' => array( 'Benutzerdatenexport' ),
 );
