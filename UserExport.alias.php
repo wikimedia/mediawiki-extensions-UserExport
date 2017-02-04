@@ -8,16 +8,17 @@
 // @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
+
 /** English
  * @author Rodrigoprimo
  */
 $specialPageAliases['en'] = array(
-	'userexport' => array( 'userexport' ),
+	'UserExport' => array( 'Userexport' ),
 );
 
 /** German (Deutsch)
  * @author Kghbln
  */
 $specialPageAliases['de'] = array(
-	'userexport' => array( 'Benutzerdatenexport' ),
+	'UserExport' => array( 'Benutzerdatenexport' ),
 );
