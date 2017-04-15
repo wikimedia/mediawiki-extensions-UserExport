@@ -82,4 +82,8 @@ class UserExport extends SpecialPage {
 		unlink( $filePath );
 		die;
 	}
+
+	protected function getGroupName() {
+		return 'users';
+	}
 }

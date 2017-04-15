@@ -50,7 +50,6 @@ $wgExtensionMessagesFiles['UserExportAlias'] = __DIR__ . '/UserExport.alias.php'
 
 // Register special page into MediaWiki.
 $wgSpecialPages['UserExport'] = 'UserExport';
-$wgSpecialPageGroups['UserExport'] = 'users';
 
 // Create new right.
 $wgAvailableRights[] = 'userexport';
