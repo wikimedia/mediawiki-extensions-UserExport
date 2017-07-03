@@ -1,14 +1,39 @@
-# UserExport
+## UserExport
 
-The UserExport extension to MediaWiki allows to export all user's name and e-mail address as a CSV file.
+The UserExport extension to MediaWiki allows to export all user's account names together with the respective
+e-mail address as a UTF-8 encoded CSV file.
 
-## Installation
-1. Obtain the code from [GitHub](https://github.com/kghbln/UserExport)
-2. Extract the files in a directory called ``UserExport`` in your ``extensions/`` folder.
-3. Add the following code at the bottom of your "LocalSettings.php" file:<br />``require_once "$IP/extensions/UserExport/UserExport.php";``
-4. Go to "Special:Version" on your wiki to verify that the extension is successfully installed.
-5. Done.
 
-## Configuration
+### Compatibility
+
+* PHP 5.3+
+* MediaWiki 1.23+
+
+See also the CHANGELOG.md file provided with the code.
+
+
+### Installation
+
+1. Obtain the code from [GitHub](https://github.com/wikimedia/mediawiki-extensions-UserExport)
+2. Extract the files in a directory called `UserExport` in your `extensions/` folder.
+3. Add the following code at the bottom of your "LocalSettings.php" file:  
+```
+require_once "$IP/extensions/UserExport/UserExport.php";`
+```
+4. Configure as required. See the "Configuration" section below.
+5. Go to "Special:Version" on your wiki to verify that the extension was successfully installed.
+6. Done.
+
+
+### Configuration
+
+By default the `userexport` right provided by this extension is assigned to any user group. In case you would
+like to assign the right to an additional user group, e.g. "bureaucrat" add the following line to your
+"LocalSettings.php" file after the inclusion of the extension as described in the "Installation" section above:
+
+```
+$wgGroupPermissions['bureaucrat']['userexport'] = true;
+```
+
+### Usage
 See the [extension's homepage](https://www.mediawiki.org/wiki/Extension:UserExport) for instructions on how to configure this extension.
-
