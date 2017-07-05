@@ -10,5 +10,6 @@
 	"userexport-submit": "Export",
 	"userexport-badtoken": "Invalid edit token",
 	"userexport-description": "This page allows to export the user data (user name and user e-mail) of all users registered on this wiki to a CSV-file.",
-	"action-userexport": "export user data"
+	"right-userexport": "Export user data in bulk",
+	"action-userexport": "export user data from this wiki"
 }
