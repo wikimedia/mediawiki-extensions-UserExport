@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"userexport-desc": "사용자 데이터를 CSV 파일로 내보낼 수 있게 허용",
+	"userexport": "사용자 데이터 내보내기",
+	"userexport-submit": "내보내기",
+	"userexport-badtoken": "잘못된 편집 토큰",
+	"right-userexport": "사용자 데이터를 대량으로 내보내기",
+	"action-userexport": "이 위키의 사용자 데이터를 내보내기"
+}
