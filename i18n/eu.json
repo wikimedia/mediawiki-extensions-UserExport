@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mikel Ibaiba"
+		]
+	},
+	"userexport-desc": "Erabiltzailearen informazioa esportatu daiteke CSV artxiboan",
+	"userexport": "Erabiltzailearen datuak esportatu",
+	"userexport-submit": "esportatu",
+	"userexport-description": "Orrialde honek wiki honetan CVS atxiboarekin erregistratu diren erabiltzaile guztien datuak esportatzeko baimena ematen du (erabiltzailearen izena eta emaila).",
+	"action-userexport": "Erabiltzailearen datuak esportatu wiki honetatik"
+}
