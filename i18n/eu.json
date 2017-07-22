@@ -9,5 +9,6 @@
 	"userexport-submit": "esportatu",
 	"userexport-badtoken": "Aldaketa token ez baliagarria",
 	"userexport-description": "Orrialde honek wiki honetan CVS atxiboarekin erregistratu diren erabiltzaile guztien datuak esportatzeko baimena ematen du (erabiltzailearen izena eta emaila).",
+	"right-userexport": "Erabiltzailaren informazioa batera esportatu",
 	"action-userexport": "Erabiltzailearen datuak esportatu wiki honetatik"
 }
