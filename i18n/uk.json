@@ -1,9 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"SimondR"
+			"SimondR",
+			"Piramidion"
 		]
 	},
+	"userexport-desc": "Дозволяє експортувати дані користувача у файл CSV",
 	"userexport": "Експорт користувацьких даних",
-	"userexport-submit": "Експорт"
+	"userexport-submit": "Експорт",
+	"userexport-badtoken": "Недійсний токен редагування",
+	"userexport-description": "Ця сторінка дозволяє експортувати дані (ім'я користувача та електронну пошту) усіх користувачів, зареєстрованих у цій вікі, у файл CSV.",
+	"right-userexport": "Експортувати дані про користувачів пакетно",
+	"action-userexport": "експортувати дані про користувачів з цієї вікі"
 }
