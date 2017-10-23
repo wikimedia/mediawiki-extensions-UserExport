@@ -19,7 +19,6 @@
  * @author Karsten Hoffmeyer (Kghbln) <kontakt@wikihoster.net>
  * @author Sam Reed (Reedy)
  * @author Samantha Nguyen (SamanthaNguyen)
- * @author Umherirrender (Umherirrender)
  *
  * @license https://www.gnu.org/licenses/gpl-2.0 GNU General Public License 2.0 or later
  */

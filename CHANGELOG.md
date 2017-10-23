@@ -14,8 +14,8 @@ Authored: Kghbln
 * Added support for MW 1.26+
 * Removed support for < MW 1.23.0
 * Removed I18n shim for php message files (by Kghbln)
-* Migrated registration of special pages to `SpecialPage::getGroupName` (by Umherirrender)
-* Fixed typos for special pages aliases (by Umherirrender)
+* Migrated registration of special pages to `SpecialPage::getGroupName`
+* Fixed typos for special pages aliases
 * Updated file documentation (by Kghbln)
 * Updated README (by Kgbhln)
 
