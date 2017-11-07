@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Banjo"
 		]
 	},
+	"userexport-desc": "Permite exportar datos de usuarios a un ficheiro CSV",
 	"userexport": "Exportar os datos do usuario",
 	"userexport-submit": "Exportar"
 }
