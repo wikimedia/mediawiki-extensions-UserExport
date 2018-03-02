@@ -40,7 +40,7 @@ $wgExtensionCredits['specialpage'][] = array(
     'url' => 'https://www.mediawiki.org/wiki/Extension:UserExport',
     'descriptionmsg' => 'userexport-desc',
     'version' => '1.2.0',
-    'license-name' => 'GPL-2.0+'
+    'license-name' => 'GPL-2.0-or-later'
     );
 
 // Register extension class.
