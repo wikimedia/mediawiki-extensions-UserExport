@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
 	"userexport-desc": "Permite exportas datos de usuarios a un archivo CSV",
+	"userexport": "Exportar datos de usuario",
 	"userexport-submit": "Exportar",
 	"right-userexport": "Exportar datos de usuarios en masa",
 	"action-userexport": "exportar datos de usuarios de este wiki"
