@@ -6,5 +6,6 @@
 	},
 	"userexport-desc": "Дазваляе экспартаваць зьвесткі ўдзельніка ў CSV-файл",
 	"userexport": "Экспартаваць зьвесткі ўдзельніка",
-	"userexport-submit": "Экспарт"
+	"userexport-submit": "Экспарт",
+	"userexport-badtoken": "Няслушны токен рэдагаваньня"
 }
