@@ -34,16 +34,17 @@ class UserExport extends SpecialPage {
 			}
 		}
 
-		$wgOut->addHTML(
-			Xml::openElement( 'p' ) .
-			wfMessage( 'userexport-description' )->text() .
-			Xml::closeElement( 'p' ) .
-			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getTitle()->getLocalUrl(), 'id' => 'userexportform' ) ) .
-			Xml::submitButton( wfMessage( 'userexport-submit' )->text() ) .
-			Html::hidden( 'token', $wgUser->getEditToken() ) .
-			Html::hidden( 'exportusers', true ) .
-			Xml::closeElement( 'form' ) . "\n"
-		);
+		$htmlForm = HTMLForm::factory( 'ooui', [], $this->getContext() );
+		$htmlForm
+			->addHiddenField( 'token', $wgUser->getEditToken() )
+			->addHiddenField( 'exportusers', true )
+			->addHeaderText	( wfMessage( 'userexport-description' )->text() , null )
+			->setAction( $this->getTitle()->getLocalUrl() )
+			->setId( 'userexportform' )
+			->setMethod( 'post' )
+			->setSubmitText( wfMessage( 'userexport-submit' )->text() )
+			->prepareForm()
+			->displayForm( false );
 	}
 
 	/**
