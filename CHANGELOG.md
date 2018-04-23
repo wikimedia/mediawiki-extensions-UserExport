@@ -6,10 +6,18 @@ e-mail address as a UTF-8 encoded CSV file.
 This file documents the development changes.
 
 
+### 1.2.1
+
+Released: 2018-04-23
+
+* Converted special page "Userexport" to use Object Oriented User Interface (OOUI) (by Jayprakash12345)
+* Added support for translations by translatewiki.net (by Kghbln)
+* Added system message translations to many languages (by translatewiki.net translators)
+
+
 ### 1.2.0
 
 Released: 2017-07-03  
-Authored: Kghbln
 
 * Added support for MW 1.26+
 * Removed support for < MW 1.23.0
@@ -23,7 +31,6 @@ Authored: Kghbln
 ### 1.1.1
 
 Released: 2017-01-21  
-Authored: SamanthaNguyen
 
 * Migrated to `getEditToken` (by Reedy)
 * Improved exception reporting (by Reedy)
@@ -35,7 +42,6 @@ Authored: SamanthaNguyen
 ### 1.1.0
 
 Released: 2014-11-14  
-Authored: Kghbln
 
 * Removed support for ≤ PHP 5.2
 * Removed support for < MW 1.17.0
@@ -54,7 +60,6 @@ Authored: Kghbln
 ### 1.0.1
 
 Released: 2014-01-02  
-Authored: Kghbln
 
 * Improved formatting and file documentation (by Kghbln)
 
@@ -62,6 +67,5 @@ Authored: Kghbln
 ### 1.0
 
 Released: 2009-08-09  
-Authored: Rodrigoprimo
 
 * Initial public release (by Rodrigoprimo)

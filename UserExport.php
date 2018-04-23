@@ -6,7 +6,7 @@
  * @ingroup Extensions
  * @package MediaWiki
  *
- * @version 1.2.0 2017-07-03
+ * @version 1.2.1 2018-04-23
  *
  * @links https://github.com/wikimedia/mediawiki-extensions-UserExport/blob/master/README.md Documentation
  * @links https://www.mediawiki.org/wiki/Extension_talk:UserExport Support
@@ -19,6 +19,7 @@
  * @author Karsten Hoffmeyer (Kghbln) <kontakt@wikihoster.net>
  * @author Sam Reed (Reedy)
  * @author Samantha Nguyen (SamanthaNguyen)
+ * @author Jay Prakash (Jayprakash12345)
  *
  * @license https://www.gnu.org/licenses/gpl-2.0 GNU General Public License 2.0 or later
  */
@@ -39,7 +40,7 @@ $wgExtensionCredits['specialpage'][] = array(
         ),
     'url' => 'https://www.mediawiki.org/wiki/Extension:UserExport',
     'descriptionmsg' => 'userexport-desc',
-    'version' => '1.2.0',
+    'version' => '1.2.1',
     'license-name' => 'GPL-2.0-or-later'
     );
 
