@@ -23,36 +23,17 @@
  *
  * @license https://www.gnu.org/licenses/gpl-2.0 GNU General Public License 2.0 or later
  */
-
-// Ensure that the script cannot be executed outside of MediaWiki.
-if ( !defined( 'MEDIAWIKI' ) ) {
-    die( 'This is an extension to MediaWiki and cannot be run standalone.' );
-}
-
-// Display extension properties on MediaWiki.
-$wgExtensionCredits['specialpage'][] = array(
-    'path' => __FILE__,
-    'name' => 'User Export',
-    'author' => array(
-        'Rodrigo Sampaio Primo',
-        'Karsten Hoffmeyer',
-	'...'
-        ),
-    'url' => 'https://www.mediawiki.org/wiki/Extension:UserExport',
-    'descriptionmsg' => 'userexport-desc',
-    'version' => '1.2.1',
-    'license-name' => 'GPL-2.0-or-later'
+if ( function_exists( 'wfLoadExtension' ) ) {
+    wfLoadExtension( 'UserExport' );
+    // Keep i18n globals so mergeMessageFileList.php doesn't break
+    $wgMessagesDirs['UserExport'] = __DIR__ . '/i18n';
+    $wgExtensionMessagesFiles['UserExportAlias'] = __DIR__ . '/UserExport.alias.php';
+    wfWarn(
+        'Deprecated PHP entry point used for the UserExport extension. ' .
+        'Please use wfLoadExtension instead, ' .
+        'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
     );
-
-// Register extension class.
-$wgAutoloadClasses['UserExport'] = __DIR__ . '/UserExport.body.php';
-
-// Register extension messages and other localisation.
-$wgMessagesDirs['UserExport'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['UserExportAlias'] = __DIR__ . '/UserExport.alias.php';
-
-// Register special page into MediaWiki.
-$wgSpecialPages['UserExport'] = 'UserExport';
-
-// Create new right.
-$wgAvailableRights[] = 'userexport';
+    return;
+} else {
+    die( 'This version of the UserExport extension requires MediaWiki 1.25+' );
+}
