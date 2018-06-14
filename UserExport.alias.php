@@ -5,20 +5,18 @@
  * @file
  * @ingroup Extensions
  */
-// @codingStandardsIgnoreFile
-
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English
  * @author Rodrigoprimo
  */
-$specialPageAliases['en'] = array(
-	'UserExport' => array( 'Userexport' ),
-);
+$specialPageAliases['en'] = [
+	'UserExport' => [ 'Userexport' ],
+];
 
 /** German (Deutsch)
  * @author Kghbln
  */
-$specialPageAliases['de'] = array(
-	'UserExport' => array( 'Benutzerdatenexport' ),
-);
+$specialPageAliases['de'] = [
+	'UserExport' => [ 'Benutzerdatenexport' ],
+];
