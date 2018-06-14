@@ -20,3 +20,10 @@ $specialPageAliases['en'] = [
 $specialPageAliases['de'] = [
 	'UserExport' => [ 'Benutzerdatenexport' ],
 ];
+
+/** Spanish (Español)
+ * @author MarcoAurelio
+ */
+$specialPageAliases['es'] = [
+	'UserExport' => [ 'Exportar_usuario', 'Exportar_datos_de_usuario' ],
+];
