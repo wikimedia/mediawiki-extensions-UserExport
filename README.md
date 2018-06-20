@@ -6,8 +6,8 @@ e-mail address as a UTF-8 encoded CSV file.
 
 ### Compatibility
 
-* PHP 5.3+
-* MediaWiki 1.23+
+* PHP 5.4+
+* MediaWiki 1.25+
 
 See also the CHANGELOG.md file provided with the code.
 

@@ -5,6 +5,16 @@ e-mail address as a UTF-8 encoded CSV file.
 
 This file documents the development changes.
 
+## 1.3.0
+
+Released: 2018-06-20
+
+* Converted to use extension registration (UserExport requires now MediaWiki 1.25 or higher) (by MarcoAurelio).
+* Fixed deprecated SpecialPage::getTitle warnings (by MarcoAurelio).
+* Some PHPCS fixes (by MarcoAurelio).
+* Converted to PHP 5.4+ short array syntax (by MarcoAurelio).
+* Spanish namespace aliases for Special:UserExport added (by MarcoAurelio).
+
 
 ### 1.2.1
 
@@ -17,7 +27,7 @@ Released: 2018-04-23
 
 ### 1.2.0
 
-Released: 2017-07-03  
+Released: 2017-07-03
 
 * Added support for MW 1.26+
 * Removed support for < MW 1.23.0
@@ -30,7 +40,7 @@ Released: 2017-07-03
 
 ### 1.1.1
 
-Released: 2017-01-21  
+Released: 2017-01-21
 
 * Migrated to `getEditToken` (by Reedy)
 * Improved exception reporting (by Reedy)
@@ -41,7 +51,7 @@ Released: 2017-01-21
 
 ### 1.1.0
 
-Released: 2014-11-14  
+Released: 2014-11-14
 
 * Removed support for ≤ PHP 5.2
 * Removed support for < MW 1.17.0
@@ -59,13 +69,13 @@ Released: 2014-11-14
 
 ### 1.0.1
 
-Released: 2014-01-02  
+Released: 2014-01-02
 
 * Improved formatting and file documentation (by Kghbln)
 
 
 ### 1.0
 
-Released: 2009-08-09  
+Released: 2009-08-09
 
 * Initial public release (by Rodrigoprimo)

@@ -6,7 +6,6 @@
  * @ingroup Extensions
  * @package MediaWiki
  *
- * @version 1.2.1 2018-04-23
  *
  * @links https://github.com/wikimedia/mediawiki-extensions-UserExport/blob/master/README.md Documentation
  * @links https://www.mediawiki.org/wiki/Extension_talk:UserExport Support
