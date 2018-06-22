@@ -3,7 +3,7 @@
  * Main file for the UserExport extension.
  */
 
-//Special page class for the User Export extension
+// Special page class for the User Export extension
 /**
  * Special page that allows sysops to export the username and
  * user email to a CSV file
@@ -38,8 +38,8 @@ class UserExport extends SpecialPage {
 		$htmlForm
 			->addHiddenField( 'token', $wgUser->getEditToken() )
 			->addHiddenField( 'exportusers', true )
-			->addHeaderText	( wfMessage( 'userexport-description' )->text() , null )
-			->setAction( $this->getTitle()->getLocalUrl() )
+			->addHeaderText( wfMessage( 'userexport-description' )->text(), null )
+			->setAction( $this->getPageTitle()->getLocalUrl() )
 			->setId( 'userexportform' )
 			->setMethod( 'post' )
 			->setSubmitText( wfMessage( 'userexport-submit' )->text() )
@@ -52,18 +52,17 @@ class UserExport extends SpecialPage {
 	 *
 	 * @return bool Always returns true - throws exceptions on failure.
 	 */
-	private function exportUsers()
-	{
+	private function exportUsers() {
 		$filePath = tempnam( sys_get_temp_dir(), '' );
 		$file = fopen( $filePath, 'w' );
 
 		$db = wfGetDB( DB_MASTER );
-		$users = $db->select( 'user', array( 'user_name', 'user_email' ) );
+		$users = $db->select( 'user', [ 'user_name', 'user_email' ] );
 
-		fputcsv( $file, array( 'login', 'email' ) );
+		fputcsv( $file, [ 'login', 'email' ] );
 
 		while ( $user = $db->fetchObject( $users ) ) {
-			fputcsv( $file, array( $user->user_name, $user->user_email ) );
+			fputcsv( $file, [ $user->user_name, $user->user_email ] );
 		}
 
 		fclose( $file );
