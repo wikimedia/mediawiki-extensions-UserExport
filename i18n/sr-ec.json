@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Милан Јелисавчић"
+			"Милан Јелисавчић",
+			"BadDog"
 		]
 	},
-	"userexport-submit": "Извези"
+	"userexport-submit": "Извези",
+	"action-userexport": "извозите корисничке податке из овог викија"
 }
