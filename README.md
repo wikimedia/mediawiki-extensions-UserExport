@@ -1,3 +1,5 @@
+[![devDependencies Status](https://david-dm.org/wikimedia/mediawiki-extensions-UserExport/dev-status.svg)](https://david-dm.org/wikimedia/mediawiki-extensions-UserExport?type=dev)
+
 ## UserExport
 
 The UserExport extension to MediaWiki allows to export all user's account names together with the respective
