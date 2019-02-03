@@ -41,7 +41,6 @@ class UserExport extends SpecialPage {
 			->addHeaderText( wfMessage( 'userexport-description' )->text(), null )
 			->setAction( $this->getPageTitle()->getLocalUrl() )
 			->setId( 'userexportform' )
-			->setMethod( 'post' )
 			->setSubmitText( wfMessage( 'userexport-submit' )->text() )
 			->prepareForm()
 			->displayForm( false );
