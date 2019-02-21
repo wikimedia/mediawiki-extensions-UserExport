@@ -17,18 +17,18 @@ class UserExport extends SpecialPage {
 	}
 
 	function execute( $par ) {
-		global $wgRequest, $wgOut, $wgUser;
-
 		$this->setHeaders();
+		$user = $this->getUser();
+		$request = $this->getRequest();
 
-		if ( !$wgUser->isAllowed( 'userexport' ) ) {
+		if ( !$user->isAllowed( 'userexport' ) ) {
 			throw new PermissionsError( 'userexport' );
 		}
 
-		if ( $wgRequest->getText( 'exportusers' ) ) {
-			if ( !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) {
+		if ( $request->getText( 'exportusers' ) ) {
+			if ( !$user->matchEditToken( $request->getVal( 'token' ) ) ) {
 				// bad edit token
-				$wgOut->addHtml( "<span style=\"color: red;\">" . wfMessage( 'userexport-badtoken' )->escaped() . "</span><br />\n" );
+				$this->getOutput()->addHtml( "<span style=\"color: red;\">" . wfMessage( 'userexport-badtoken' )->escaped() . "</span><br />\n" );
 			} else {
 				$this->exportUsers();
 			}
@@ -36,7 +36,7 @@ class UserExport extends SpecialPage {
 
 		$htmlForm = HTMLForm::factory( 'ooui', [], $this->getContext() );
 		$htmlForm
-			->addHiddenField( 'token', $wgUser->getEditToken() )
+			->addHiddenField( 'token', $user->getEditToken() )
 			->addHiddenField( 'exportusers', true )
 			->addHeaderText( wfMessage( 'userexport-description' )->text(), null )
 			->setAction( $this->getPageTitle()->getLocalUrl() )
