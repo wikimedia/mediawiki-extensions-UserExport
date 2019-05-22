@@ -5,6 +5,17 @@ e-mail address as a UTF-8 encoded CSV file.
 
 This file documents the development changes.
 
+
+## 2.0.0
+
+Released: 2019-06-04
+
+* Removed deprecated PHP entry point (by Gopala Krishna A)
+* Removed the usage of global variable $wgUser, $wgRequest, $wgOut (by Ananthsubray)
+* Removed setMethod( 'post' ) from HTMLForm Object (by Jayprakash-SE)
+* Added system message translations to many languages (by translatewiki.net translators)
+
+
 ## 1.3.0
 
 Released: 2018-06-20
