@@ -4,7 +4,7 @@
 			"Kghbln"
 		]
 	},
-	"userexport-desc": "Ermöglicht den Export von Benutzerdaten in eine CSV-Datei",
+	"userexport-desc": "Ermöglicht den Export verschiedener Benutzerdaten in eine CSV-Datei",
 	"userexport": "Benutzerdaten exportieren",
 	"userexport-submit": "Exportieren",
 	"userexport-badtoken": "Der Bearbeitungstoken ist ungültig.",
