@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
-	"userexport-desc": "Секогаш извезувај користнички податоци во CSV-податотека",
+	"userexport-desc": "Овозможува извоз на кориснички податоци во CSV-податотека",
 	"userexport": "Извези кориснички податоци",
 	"userexport-submit": "Извези",
 	"userexport-badtoken": "Погрешна шифра за уредување",
