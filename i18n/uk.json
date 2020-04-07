@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"SimondR",
-			"Piramidion"
+			"Piramidion",
+			"SimondR"
 		]
 	},
 	"userexport-desc": "Дозволяє експортувати дані користувача у файл CSV",
