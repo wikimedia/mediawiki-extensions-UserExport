@@ -1,15 +1,35 @@
 {
+	"name": "mediawiki/user-export",
+	"authors": [
+		{
+			"name": "Rodrigo Sampaio Primo",
+			"role": "developer"
+		},
+		{
+			"name": "Karsten Hoffmeyer"
+		},
+		{
+			"name": "Mark A. Hershberger"
+		}
+	],
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "1.0.0",
 		"jakub-onderka/php-console-highlighter": "0.4.0",
 		"mediawiki/minus-x": "1.0.0",
-		"mediawiki/mediawiki-codesniffer": "29.0.0"
+		"mediawiki/mediawiki-codesniffer": "29.0.0",
+		"vimeo/psalm": "^3.10"
+	},
+	"autoload": {
+		"psr-4": {
+			"MediaWiki\\Extension\\UserExport\\": "src/"
+		}
 	},
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor --exclude node_modules",
 			"minus-x check .",
-			"phpcs -ps"
+			"phpcs -ps",
+			"psalm"
 		],
 		"fix": [
 			"minus-x fix .",

@@ -6,8 +6,8 @@ e-mail address as a UTF-8 encoded CSV file.
 
 ### Compatibility
 
-* PHP 5.4+
-* MediaWiki 1.25+
+* PHP 7.2+
+* MediaWiki 1.33+
 
 See also the CHANGELOG.md file provided with the code.
 
@@ -27,21 +27,14 @@ wfLoadExtension( 'UserExport' );
 
 ### Configuration
 
-By default the `userexport` permission provided by this extension is assigned to any user group. In case you
-would like to assign the permission to an existing user group, e.g. "bureaucrat" add the following line to your
-"LocalSettings.php" file after the inclusion of the extension as described in the "Installation" section above:
+By default the "userexport" permission provided by this extension is assigned to the "bureaucrat" user group.
+In case you would like to change this add the following lines to your "LocalSettings.php" file after the
+inclusion of the extension as described in the "Installation" section above:
 
 ```
-$wgGroupPermissions['bureaucrat']['userexport'] = true;
+$wgGroupPermissions['bureaucrat']['userexport'] = false; // remove from "bureaucrat" group
+$wgGroupPermissions['userexport']['userexport'] = true; // add to dedicated "userexport" group
 ```
-
-Preferably you could assing the permission to a new user group, e.g. "userexport" to allow for a more fine graned
-permission management by adding the following line instead:
-
-```
-$wgGroupPermissions['userexport']['userexport'] = true;
-```
-
 
 ### Usage
 See the [extension's homepage](https://www.mediawiki.org/wiki/Extension:UserExport) for further information.

@@ -11,7 +11,7 @@ $specialPageAliases = [];
  * @author Rodrigoprimo
  */
 $specialPageAliases['en'] = [
-	'UserExport' => [ 'Userexport' ],
+	'UserExport' => [ 'UserExport' ],
 ];
 
 /** German (Deutsch)

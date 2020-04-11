@@ -6,6 +6,16 @@ e-mail address as a UTF-8 encoded CSV file.
 This file documents the development changes.
 
 
+## 2.1.0
+
+Release: 2020-04-12
+
+* Removed support for < MW 1.33.0 (by Mark A. Hershberger)
+* Added "userexport" permission by default to the bureaucrat group (by Mark A. Hershberger)
+* General code maintenance and tidying to adhere to coding conventions (by Mark A. Hershberger)
+* Added system message translations to many languages (by translatewiki.net translators)
+
+
 ## 2.0.0
 
 Released: 2019-06-04
