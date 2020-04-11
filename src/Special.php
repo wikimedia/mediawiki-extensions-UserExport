@@ -1,34 +1,65 @@
 <?php
 /**
  * Main file for the UserExport extension.
+ *
+ * Copyright (C) 2009  Rodrigo Sampaio Primo
+ * Copyright (C) 2020  Mark A. Hershberger
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301, USA.
  */
+namespace MediaWiki\Extension\UserExport;
 
-// Special page class for the User Export extension
+use HTMLForm;
+use MediaWiki\MediaWikiServices;
+use PermissionsError;
+use RequestContext;
+use SpecialPage;
+
 /**
- * Special page that allows sysops to export the username and
- * user email to a CSV file
+ * Special page class for the User Export extension
+ *
+ * Allows sysops to export the username and user email to a CSV file
  *
  * @addtogroup Extensions
  * @author Rodrigo Sampaio Primo <rodrigo@utopia.org.br>
  */
-class UserExport extends SpecialPage {
-	function __construct() {
+class Special extends SpecialPage {
+	public function __construct() {
 		parent::__construct( 'UserExport', 'userexport' );
+		$this->mContext = RequestContext::getMain();
 	}
 
-	function execute( $par ) {
+	public function execute( $par ) :void {
 		$this->setHeaders();
 		$user = $this->getUser();
 		$request = $this->getRequest();
+		$permMgr = MediaWikiServices::getInstance()->getPermissionManager();
 
-		if ( !$user->isAllowed( 'userexport' ) ) {
+		if ( !$permMgr->userHasRight( $user, 'userexport' ) ) {
 			throw new PermissionsError( 'userexport' );
 		}
 
 		if ( $request->getText( 'exportusers' ) ) {
-			if ( !$user->matchEditToken( $request->getVal( 'token' ) ) ) {
-				// bad edit token
-				$this->getOutput()->addHtml( "<span style=\"color: red;\">" . wfMessage( 'userexport-badtoken' )->escaped() . "</span><br />\n" );
+			$token = $request->getVal( 'token' );
+			if ( $token === null || !$user->matchEditToken( $token ) ) {
+				$this->getOutput()->addHtml(
+					"<span style=\"color: red;\">"
+					. wfMessage( 'userexport-badtoken' )->escaped()
+					. "</span><br />\n"
+				);
 			} else {
 				$this->exportUsers();
 			}
@@ -37,7 +68,7 @@ class UserExport extends SpecialPage {
 		$htmlForm = HTMLForm::factory( 'ooui', [], $this->getContext() );
 		$htmlForm
 			->addHiddenField( 'token', $user->getEditToken() )
-			->addHiddenField( 'exportusers', true )
+			->addHiddenField( 'exportusers', '1' )
 			->addHeaderText( wfMessage( 'userexport-description' )->text(), null )
 			->setAction( $this->getPageTitle()->getLocalUrl() )
 			->setId( 'userexportform' )

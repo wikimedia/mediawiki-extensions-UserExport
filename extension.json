@@ -1,6 +1,6 @@
 {
 	"name": "UserExport",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"author": [
 		"Rodrigo Sampaio Primo",
 		"Karsten Hoffmeyer",
@@ -11,13 +11,18 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.25.0"
+		"MediaWiki": ">= 1.34.0"
 	},
 	"AvailableRights": [
 		"userexport"
 	],
+	"GroupPermissions": {
+		"sysop": {
+			"userexport": true
+		}
+	},
 	"SpecialPages": {
-		"UserExport": "UserExport"
+		"UserExport": "MediaWiki\\Extension\\UserExport\\Special"
 	},
 	"MessagesDirs": {
 		"UserExport": [
@@ -27,8 +32,8 @@
 	"ExtensionMessagesFiles": {
 		"UserExportAlias": "UserExport.alias.php"
 	},
-	"AutoloadClasses": {
-		"UserExport": "UserExport.body.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\UserExport\\": "src"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
