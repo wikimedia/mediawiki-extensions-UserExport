@@ -1,5 +1,6 @@
 {
 	"name": "mediawiki/user-export",
+	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "Rodrigo Sampaio Primo",
