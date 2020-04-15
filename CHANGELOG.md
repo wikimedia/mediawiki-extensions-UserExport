@@ -6,9 +6,16 @@ e-mail address as a UTF-8 encoded CSV file.
 This file documents the development changes.
 
 
+## 2.1.1
+
+Released: 2020-04-15
+
+* Provided missing license information for Composer (by Mark A. Hershberger)
+
+
 ## 2.1.0
 
-Release: 2020-04-12
+Released: 2020-04-12
 
 * Removed support for < MW 1.33.0 (by Mark A. Hershberger)
 * Added "userexport" permission by default to the bureaucrat group (by Mark A. Hershberger)
