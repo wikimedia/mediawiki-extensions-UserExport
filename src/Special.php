@@ -91,7 +91,7 @@ class Special extends SpecialPage {
 
 		fputcsv( $file, [ 'login', 'email' ] );
 
-		while ( $user = $db->fetchObject( $users ) ) {
+		foreach ( $users as $user ) {
 			fputcsv( $file, [ $user->user_name, $user->user_email ] );
 		}
 
