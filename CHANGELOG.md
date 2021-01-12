@@ -74,7 +74,7 @@ Released: 2017-01-21
 * Improved exception reporting (by Reedy)
 * Fixed registration of special page aliases (by SamanthaNyuyen)
 * Improved code formatting (by Kghbln and Reedy)
-* Updated file documenation (by Kghbln)
+* Updated file documentation (by Kghbln)
 
 
 ### 1.1.0
