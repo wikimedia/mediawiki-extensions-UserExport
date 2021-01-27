@@ -79,8 +79,6 @@ class Special extends SpecialPage {
 
 	/**
 	 * Function to query the database and generate the CVS file
-	 *
-	 * @return bool Always returns true - throws exceptions on failure.
 	 */
 	private function exportUsers() {
 		$filePath = tempnam( sys_get_temp_dir(), '' );
