@@ -111,6 +111,7 @@ class Special extends SpecialPage {
 		die;
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'users';
 	}
