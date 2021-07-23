@@ -42,7 +42,7 @@ class Special extends SpecialPage {
 		$this->mContext = RequestContext::getMain();
 	}
 
-	public function execute( $par ) :void {
+	public function execute( $par ): void {
 		$this->setHeaders();
 		$user = $this->getUser();
 		$request = $this->getRequest();
