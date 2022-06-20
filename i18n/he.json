@@ -4,11 +4,11 @@
 			"Amire80"
 		]
 	},
-	"userexport-desc": "ייצוא נתוני משתמשים לקובץ CSV",
-	"userexport": "ייצוא נתוני משתמשים",
+	"userexport-desc": "יצוא נתוני משתמשים לקובץ CSV",
+	"userexport": "יצוא נתוני משתמשים",
 	"userexport-submit": "יצוא",
 	"userexport-badtoken": "אסימון עריכה בלתי־תקין",
 	"userexport-description": "הדף הזה מאפשר לייצא נתוני משתמשים (שם משתמש וכתובת דוא\"ל של משתמש) של כל המשתמשים הרשומים בוויקי הזה לקובץ CSV.",
-	"right-userexport": "ייצוא נתוני משתמשים בנפח רב",
+	"right-userexport": "יצוא נתוני משתמשים בנפח רב",
 	"action-userexport": "לייצא נתוני משתמשים מהוויקי הזה"
 }
