@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"userexport-desc": "Permitte exportar datos de usator in un file CSV",
+	"userexport": "Exportar datos de usator",
+	"userexport-submit": "Exportar",
+	"userexport-badtoken": "Token de modification invalide",
+	"userexport-description": "Iste pagina permitte exportar le datos (nomine de usator e adresse de e-mail) de tote le usatores inscribite sur iste wiki in un file CSV.",
+	"right-userexport": "Exportar datos de usator in massa",
+	"action-userexport": "exportar datos de usator de iste wiki"
+}
