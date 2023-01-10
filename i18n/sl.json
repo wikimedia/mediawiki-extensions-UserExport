@@ -1,8 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eleassar",
 			"HairyFotr"
 		]
 	},
-	"userexport-submit": "Izvozi"
+	"userexport-desc": "Omogoča izvoz uporabniških podatkov v datoteko CSV",
+	"userexport": "Izvozi uporabniške podatke",
+	"userexport-submit": "Izvozi",
+	"userexport-badtoken": "Neveljaven žeton urejanja",
+	"userexport-description": "Ta stran omogoča izvoz uporabniških podatkov (uporabniško ime in e-poštni naslov) vseh uporabnikov, registriranih v tem vikiju, v datoteko CSV.",
+	"right-userexport": "Množičen izvoz uporabniških podatkov",
+	"action-userexport": "izvoz uporabniških podatkov iz tega vikija"
 }
