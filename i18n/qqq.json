@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Kghbln",
-			"Robby"
+			"Robby",
+			"Verdy p"
 		]
 	},
 	"userexport-desc": "{{desc|name=User Export|url=https://www.mediawiki.org/wiki/Extension:UserExport}}",
 	"userexport": "This is the label of a link.",
 	"userexport-submit": "This is the label of a button.\n{{Identical|Export}}",
 	"userexport-badtoken": "This is an error message.",
-	"userexport-description": "This is amessage on a special page providing information.",
+	"userexport-description": "This is a message on a special page providing information.\n\n'''Warning''': '''CSV''' is the correct abbreviation frequently used in English computer jargon for \"comma-separated values\" here!\n\nDo not confuse with the acronym '''CVS''' for \"Concurrent Versions System\" or \"Concurrent Versioning System\" (\"Subversion\" and \"Git\" are other common related systems for version control used in cooperative development projects).",
 	"right-userexport": "{{doc-right|userexport}}",
 	"action-userexport": "{{doc-action|userexport}}"
 }
