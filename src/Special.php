@@ -69,7 +69,7 @@ class Special extends SpecialPage {
 		$htmlForm
 			->addHiddenField( 'token', $user->getEditToken() )
 			->addHiddenField( 'exportusers', '1' )
-			->addHeaderText( wfMessage( 'userexport-description' )->text(), null )
+			->addHeaderHtml( wfMessage( 'userexport-description' )->parse() )
 			->setAction( $this->getPageTitle()->getLocalUrl() )
 			->setId( 'userexportform' )
 			->setSubmitText( wfMessage( 'userexport-submit' )->text() )
