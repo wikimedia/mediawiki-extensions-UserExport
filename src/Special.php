@@ -84,7 +84,7 @@ class Special extends SpecialPage {
 		$filePath = tempnam( sys_get_temp_dir(), '' );
 		$file = fopen( $filePath, 'w' );
 
-		$db = wfGetDB( DB_PRIMARY );
+		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$users = $db->select( 'user', [ 'user_name', 'user_email' ] );
 
 		fputcsv( $file, [ 'login', 'email' ] );
