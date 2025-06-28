@@ -34,7 +34,7 @@
 		"UserExportAlias": "UserExport.alias.php"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\UserExport\\": "src"
+		"MediaWiki\\Extension\\UserExport\\": "src/"
 	},
 	"manifest_version": 2
 }
