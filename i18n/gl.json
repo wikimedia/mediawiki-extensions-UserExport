@@ -2,10 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Banjo",
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
-	"userexport-desc": "Permite exportar datos de usuarios a un ficheiro CSV",
+	"userexport-desc": "Permite exportar os datos dos usuarios a un ficheiro CSV",
 	"userexport": "Exportar os datos do usuario",
-	"userexport-submit": "Exportar"
+	"userexport-submit": "Exportar",
+	"userexport-badtoken": "Token de edición non válido",
+	"userexport-description": "Esta páxina permite exportar os datos de usuario (nome de usuario e correo electrónico) de todos os usuarios rexistrados neste wiki a un ficheiro CSV.",
+	"right-userexport": "Exportar os datos dos usuarios de forma masiva",
+	"action-userexport": "exportar os datos dos usuarios de forma masiva"
 }
