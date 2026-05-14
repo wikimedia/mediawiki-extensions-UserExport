@@ -12,7 +12,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.38"
+		"MediaWiki": ">= 1.46"
 	},
 	"AvailableRights": [
 		"userexport"

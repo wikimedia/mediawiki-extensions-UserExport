@@ -38,8 +38,13 @@ use SpecialPage;
  */
 class Special extends SpecialPage {
 	public function __construct() {
-		parent::__construct( 'UserExport', 'userexport' );
+		parent::__construct( 'UserExport' );
 		$this->mContext = RequestContext::getMain();
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'userexport';
 	}
 
 	public function execute( $par ): void {
