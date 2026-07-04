@@ -84,13 +84,14 @@ class Special extends SpecialPage {
 
 	/**
 	 * Function to query the database and generate the CVS file
+	 * @return never
 	 */
 	private function exportUsers() {
 		$filePath = tempnam( sys_get_temp_dir(), '' );
 		$file = fopen( $filePath, 'w' );
 
 		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
-		$users = $db->select( 'user', [ 'user_name', 'user_email' ] );
+		$users = $db->select( 'user', [ 'user_name', 'user_email' ], '', __METHOD__ );
 
 		fputcsv( $file, [ 'login', 'email' ] );
 
