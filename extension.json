@@ -23,7 +23,13 @@
 		}
 	},
 	"SpecialPages": {
-		"UserExport": "MediaWiki\\Extension\\UserExport\\Special"
+		"UserExport": {
+			"class": "MediaWiki\\Extension\\UserExport\\Special",
+			"services": [
+				"ConnectionProvider",
+				"PermissionManager"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"UserExport": [

@@ -23,10 +23,11 @@
 namespace MediaWiki\Extension\UserExport;
 
 use HTMLForm;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Permissions\PermissionManager;
 use PermissionsError;
 use RequestContext;
 use SpecialPage;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 /**
  * Special page class for the User Export extension
@@ -37,7 +38,10 @@ use SpecialPage;
  * @author Rodrigo Sampaio Primo <rodrigo@utopia.org.br>
  */
 class Special extends SpecialPage {
-	public function __construct() {
+	public function __construct(
+		private readonly IConnectionProvider $dbProvider,
+		private readonly PermissionManager $permissionManager,
+	) {
 		parent::__construct( 'UserExport' );
 		$this->mContext = RequestContext::getMain();
 	}
@@ -51,9 +55,8 @@ class Special extends SpecialPage {
 		$this->setHeaders();
 		$user = $this->getUser();
 		$request = $this->getRequest();
-		$permMgr = MediaWikiServices::getInstance()->getPermissionManager();
 
-		if ( !$permMgr->userHasRight( $user, 'userexport' ) ) {
+		if ( !$this->permissionManager->userHasRight( $user, 'userexport' ) ) {
 			throw new PermissionsError( 'userexport' );
 		}
 
@@ -90,7 +93,7 @@ class Special extends SpecialPage {
 		$filePath = tempnam( sys_get_temp_dir(), '' );
 		$file = fopen( $filePath, 'w' );
 
-		$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$db = $this->dbProvider->getPrimaryDatabase();
 		$users = $db->select( 'user', [ 'user_name', 'user_email' ], '', __METHOD__ );
 
 		fputcsv( $file, [ 'login', 'email' ] );
