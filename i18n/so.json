@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"userexport-desc": "Waxay kuu oggolaanaysaa inaad xogta isticmaalayaasha u dhoofiso fayl CSV ah",
+	"userexport": "Dhoofinta xogta isticmaalaha",
+	"userexport-submit": "Dhoofin",
+	"userexport-badtoken": "Calaamadda wax ka beddelka ma saxna",
+	"userexport-description": "Boggan wuxuu kuu oggolaanayaa inaad xogta isticmaalayaasha (magaca isticmaalaha iyo iimaylka isticmaalaha) ee dhammaan isticmaalayaasha ka diiwaangashan wiki-gan u dhoofiso fayl CSV ah.",
+	"right-userexport": "Xogta isticmaalaha oo tiro badan u dhoofi",
+	"action-userexport": "Xogta isticmaalaha ka dhoofi wiki-gan"
+}
