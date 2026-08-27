@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"userexport-desc": "Umožňuje exportovať údaje o používateľoch do súboru CSV",
+	"userexport": "Exportovať údaje o používateľoch",
+	"userexport-submit": "Exportovať",
+	"userexport-badtoken": "Neplatný token úpravy",
+	"userexport-description": "Táto stránka umožňuje exportovať údaje o používateľoch (používateľské meno a e-mail) všetkých používateľov zaregistrovaných na tejto wiki do súboru CSV.",
+	"right-userexport": "Hromadne exportovať údaje o používateľoch",
+	"action-userexport": "exportovať údaje o používateľoch z tejto wiki"
+}
